@@ -1,0 +1,12 @@
+Katsiaryna Fiodarava
+Luciene Doobay
+Nardeen Hameed
+Aryan Patel
+
+January 21, 2025
+CIS 206
+Group Assignment 1
+
+In this training module, we worked in a group and got acquainted with the standards. Standards are important in order to maintain the quality of the product, convenience and ease of use, while ensuring that anyone can understand it, even if they are not new to it and have never worked with it. Each programming language has its own standards. They are publicly available and using the standards you can easily learn a new language. We decided to use Python PEP8 (Python Enhancement Proposal 8) https://peps.python.org/pep-0008/ . This is a style guide that helps you create clean and easy-to-read Python code. 
+We have studied PEP 8 and other resources and decided that we will use lower_case_with_underscores (for example: user_name, total_price) for the names of variables and functions https://peps.python.org/pep-0008/#naming-conventions . This is a style of writing names and functions in which words are separated by underscores and words are written with a small letter. It is widely used. This is because it is easy to read and conforms to the Python standard. Variable names follow the same rules as function names. When talking about a function, it's important to understand what it does, its parameters, and what it returns. It is important to name the functions correctly, as this makes it easier for other users to understand and use the code. In general, we will send the code that we will have to return to in a few months, we may have already forgotten what we meant, but having a clean and beautiful code it will be easy to figure it out. 
+Our team also decided to stick with 4 spaces per indentation level, because it's simple and helps avoid problems with mixing spaces and tabs. For convenience, we will limit the number of lines to 79 characters to improve readability. Especially on small screens or code viewing. It's also good to leave comments in which you can explain why certain actions are being performed, but you shouldn't describe the obvious things. We decided that using these standards would make our code more readable, understandable, and easy to maintain. We based our choice on PEP 8 and the Google Python Style Guide( https://google.github.io/styleguide/pyguide.html) , so they are practical and widely accepted. We will use this in all our programming projects. It will also help us work more effectively as a team.
