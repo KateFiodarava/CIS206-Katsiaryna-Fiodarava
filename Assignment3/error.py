@@ -1,6 +1,6 @@
 def calculate_bmi(weight, height_feet, height_inches):
     total_height_inches = (height_feet * 12) + height_inches  
-    if total_height_inches == 0:  # Validation
+    if total_height_inches == 0:  # 3 Validation
         raise ValueError("Height cannot be zero.")
     bmi = (weight * 703) / (total_height_inches ** 2)
     return bmi
@@ -20,17 +20,17 @@ def determine_bmi_category(bmi):
 def get_valid_input(prompt, min_value, max_value):
     while True:
         try:
-            value = float(input(prompt))  # Data type validation
-            if min_value <= value <= max_value:  # Range validation 
+            value = float(input(prompt))  # 1 Data type validation
+            if min_value <= value <= max_value:  # 3 Range validation 
                 return value
             else:
-                print(f"Please enter a value between {min_value} and {max_value}.")
+                print(f"Please enter a value between {min_value} and {max_value}.") 
         except ValueError:
-            print("Please enter a numeric value.")  # Data type validation
+            print("Please enter a numeric value.")  #2 Exception handling
 
 
 def main():
-    print("BMI Calculator!")
+    print("BMI Calculator")
     # Range and constraint validation
     weight = get_valid_input("Enter your weight in pounds: ", 30, 600)  
     height_feet = get_valid_input("Enter your height in feet: ", 2, 8)  
