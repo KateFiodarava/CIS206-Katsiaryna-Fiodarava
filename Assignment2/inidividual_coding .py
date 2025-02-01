@@ -19,7 +19,7 @@ else:
     category = "obesity"
 
 
-print(f"Your BMI is: {bmi:.2f}")
+print(f"Your BMI is: {bmi:.1f}")
 print(f"This is {category}")
 
 
