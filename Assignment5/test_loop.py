@@ -1,9 +1,11 @@
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import unittest
-from Assignment4.loop import calculate_bmi, determine_bmi_category 
+from Assignment4.loop import *
 
+class TestBMI(unittest.TestCase):
 
-class TestBMICalculator(unittest.TestCase):
-    
     def test_valid_bmi_normal(self):
         """Test BMI calculation for a normal weight case."""
         bmi = calculate_bmi(150, 5, 8)
@@ -32,5 +34,14 @@ class TestBMICalculator(unittest.TestCase):
         self.assertAlmostEqual(bmi, 42.9, places=1)
         self.assertEqual(determine_bmi_category(bmi), "Obesity")
 
+
 if __name__ == "__main__":
-    unittest.main()
+    import unittest
+
+    # Load all test cases from TestBMI
+    suite = unittest.TestLoader().loadTestsFromTestCase(TestBMI)
+
+    # Run each test one at a time
+    for test in suite:
+        print(f"\nRunning test: {test}")
+        unittest.TextTestRunner().run(test)

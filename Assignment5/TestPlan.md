@@ -9,9 +9,9 @@ classifies it accordingly. The test cases contain both valid and invalid input d
 the program handles various scenarios correctly.
 
 Testing Platform
-We will use unittest as the testing platform. unittest is a built-in Python module that provides a 
-structured way to create and run test cases. It allows automated testing, simplifying the verification 
-of functionality and quickly detecting problems.
+I will use VS Code as the testing platform. VS Code also provides great debugging tools, so if I need 
+to debug a specific test, you can use breakpoints and step through the code. 
+It allows automated testing, simplifying the verification of functionality and quickly detecting problems.
 
 Test cases
 
@@ -63,8 +63,10 @@ Expected result: Body mass index should be classified as "Obese"
 
 Execution and reporting
 
-Each test case will be performed using unittest.
+Each test case will be performed using VS Code.
 
 Screenshots of the test runs will be recorded and included in the test plan.
 
 All failed tests will be analyzed and the necessary corrections will be made to the code.
+![alt text](<Screenshot 2025-02-14 at 4.15.27 PM.png>)
+![alt text](<Screenshot 2025-02-14 at 4.13.28 PM.png>)
