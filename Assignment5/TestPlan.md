@@ -68,5 +68,5 @@ Each test case will be performed using VS Code.
 Screenshots of the test runs will be recorded and included in the test plan.
 
 All failed tests will be analyzed and the necessary corrections will be made to the code.
-![alt text](<Screenshot 2025-02-14 at 4.15.27 PM.png>)
-![alt text](<Screenshot 2025-02-14 at 4.13.28 PM.png>)
+![alt text](image1.png)
+![alt text](image2.png)
