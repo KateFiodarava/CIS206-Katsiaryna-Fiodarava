@@ -1,8 +1,10 @@
 def calculate_bmi(weight, height_feet, height_inches):
     """ Calculates BMI using weight in pounds and height in feet/inches"""
+    if weight <= 0:
+        raise ValueError("Weight must be greater than zero.")  # Validation for weight
     total_height_inches = (height_feet * 12) + height_inches  
     if total_height_inches == 0:
-        raise ValueError("Height cannot be zero.")  # Validation check
+        raise ValueError("Height cannot be zero.")  # Validation for height
     bmi = (weight * 703) / (total_height_inches ** 2)
     return bmi
 
@@ -81,4 +83,5 @@ def main():
     display_bmi_table()
 
 
-main()
+if __name__ == "__main__":
+    main()
