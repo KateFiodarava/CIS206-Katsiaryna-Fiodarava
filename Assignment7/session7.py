@@ -1,8 +1,10 @@
 file_path = r"C:\Users\1416274\Documents\CIS206_Katsiaryna_Fiodarava\Assignment7\names.txt"
+nofound_path = r"C:\Users\1416274\Documents\CIS206_Katsiaryna_Fiodarava\Assignment7\nofound.txt"
+
 with open(file_path, "r") as file:
     existing_names = {line.strip().lower() for line in file}
 
-with open("nofound.txt", "a") as nofound_file:
+with open(nofound_path, "a") as nofound_file:
     while True:
         name = input("Enter a name (or type 'exit' to quit): ").strip()
 
