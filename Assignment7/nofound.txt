@@ -1,0 +1,5 @@
+Kate
+& C:/Users/1416274/AppData/Local/Microsoft/WindowsApps/python3.11.exe c:/Users/1416274/Documents/CIS206_Katsiaryna_Fiodarava/Assignment7/session7.py
+Kate
+Wade
+Vadzim
