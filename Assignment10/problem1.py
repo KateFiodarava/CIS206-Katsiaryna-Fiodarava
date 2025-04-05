@@ -1,3 +1,10 @@
+#1.	Write a Python program to check that a string contains only a certain set of characters (in this case a-z, A-Z and 0-9).
+
+#Test: 
+#"ABCDEFabcdef123450"
+#"*&%@#!}{"
+
+
 import re
 
 def check_string(s):

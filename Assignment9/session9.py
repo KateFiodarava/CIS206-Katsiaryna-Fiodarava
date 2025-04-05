@@ -2,7 +2,7 @@ import csv
 
 file_name = "C:/Users/1416274/Documents/CIS206_Katsiaryna_Fiodarava/Assignment9/customers.csv"
 
-# Read the customer data from the CSV file and store it in a list of dictionaries
+# Read the customer data 
 def read_customers(file_name):
     customers = []
     with open(file_name, mode='r') as file:
@@ -37,9 +37,8 @@ def search_by_contact(customers, search_term):
         if search_term.lower() in customer['ContactName'].lower():
             print(f"Contact: {customer['ContactName']} | Company: {customer['CompanyName']} | Phone: {customer['Phone']}")
 
-# Main function to interact with the user
+# Main function 
 def main():
-    # File path for the customer data
     file_name = "C:/Users/1416274/Documents/CIS206_Katsiaryna_Fiodarava/Assignment9/customers.csv"
     customers = read_customers(file_name)
 
@@ -68,6 +67,5 @@ def main():
         else:
             print("Invalid choice, please try again.")
 
-# Run the main function
 if __name__ == '__main__':
     main()
