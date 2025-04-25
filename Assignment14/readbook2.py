@@ -4,7 +4,7 @@ import xml.etree.ElementTree as ET
 tree = ET.parse('books.xml')
 root = tree.getroot()
 
-# Function to search for a book by title
+# search for a book by title
 def search_book(title):
     for book in root.findall('book'):
         book_title = book.find('title').text
@@ -12,7 +12,7 @@ def search_book(title):
             return book
     return None
 
-# Main program loop
+
 while True:
     user_input = input("Enter the book title (or 'exit' to quit): ")
     if user_input.lower() == 'exit':
