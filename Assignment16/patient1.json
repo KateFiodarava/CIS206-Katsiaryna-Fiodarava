@@ -1,0 +1,19 @@
+{
+    "first_name": "Kate",
+    "last_name": "Fiodarava",
+    "address": "670 Grove Av. Wheeling, IL",
+    "phone": "222-33-44-55",
+    "procedures": [
+        {
+            "name": "Ultrasound ",
+            "date": "2025-05-10",
+            "charge": 100.0
+        }
+    ],
+    "billings": [
+        {
+            "amount": 100.0,
+            "paid": false
+        }
+    ]
+}
