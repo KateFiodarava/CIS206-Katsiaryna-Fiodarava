@@ -1,0 +1,82 @@
+
+Team Members:
+Aryan Patel
+Katsiaryna Fiodarava
+Luciene Doobay
+Nardeen Hameed
+
+
++----------------------+
+|       Patient        |
++----------------------+
+| - first: str         |
+| - middle: str        |
+| - last: str          |
+| - address: str       |
+| - city: str          |
+| - state: str         |
+| - zip_code: str      |
+| - phone: str         |
+| - emergency_name: str|
+| - emergency_phone:str|
++----------------------+
+
++------------------------+
+|      Procedure         |
++------------------------+
+| - name: str            |
+| - procedure_date: str  |
+| - practitioner: str    |
+| - charge: float        |
++------------------------+
+
++------------------------------------+
+|            InvoiceApp              |
++------------------------------------+
+| - entries: dict                    |
+| - check_vars: list                 |
++------------------------------------+
+| + __init__(root)                  |
+| + generate_invoice()              |
+| + save_json()                     |
+| + validate_names(data)            |
+| + clear_inputs()                  |
++------------------------------------+
+
+Relationships:
+InvoiceApp --> uses --> Patient  
+InvoiceApp --> uses --> Procedure
+
+
+Design Document – Patient Info and Invoice Generator
+Overview:
+This desktop GUI application simulates an invoice generator for healthcare services. It collects patient information, allows procedure selection, calculates total charges, and exports the invoice as a JSON file.
+
+Class Design:
+Patient:
+Stores patient and emergency contact details (name, address, phone, etc.).
+
+Procedure:
+Represents a medical procedure (name, date, practitioner, cost).
+
+InvoiceApp:
+Main application class that manages the GUI, handles input validation, invoice generation, and JSON export.
+
+Relationships:
+A Patient can have multiple Procedures.
+
+InvoiceApp coordinates between Patient and Procedure to display billing details.
+
+Implementation Details:
+The application is built in Python using object-oriented programming.
+
+GUI built with Tkinter.
+
+All logic is modular and encapsulated in classes.
+
+Invoice data is stored in a JSON file (invoice.json).
+
+Input validation ensures name fields contain no digits and all required fields are filled.
+
+Data Format:
+Patient and procedure data are saved as a structured JSON object, including invoice date and total charges.

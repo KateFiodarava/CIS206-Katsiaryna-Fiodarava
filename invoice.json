@@ -1,0 +1,26 @@
+{
+    "invoice_date": "2025-05-07",
+    "patient": {
+        "first_name": "Kate",
+        "middle_name": "",
+        "last_name": "Fiodarava",
+        "address": "1763 Strone",
+        "city": "Chicago",
+        "state": "Il",
+        "zip_code": "60090",
+        "phone": "222334455",
+        "emergency_contact": {
+            "name": "Vad",
+            "phone": "111223344"
+        }
+    },
+    "procedures": [
+        {
+            "name": "X-Ray",
+            "date": "2025-05-07",
+            "practitioner": "Dr. Smith",
+            "charge": 250.0
+        }
+    ],
+    "total_charges": 250.0
+}
