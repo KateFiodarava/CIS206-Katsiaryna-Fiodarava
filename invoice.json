@@ -1,26 +1,32 @@
 {
-    "invoice_date": "2025-05-07",
+    "invoice_date": "2025-05-09",
     "patient": {
-        "first_name": "Kate",
+        "first_name": "kate",
         "middle_name": "",
-        "last_name": "Fiodarava",
-        "address": "1763 Strone",
-        "city": "Chicago",
+        "last_name": "fiodarava",
+        "address": "1763 Stone",
+        "city": "Wheeling",
         "state": "Il",
         "zip_code": "60090",
-        "phone": "222334455",
+        "phone": "222335566",
         "emergency_contact": {
-            "name": "Vad",
+            "name": "vad",
             "phone": "111223344"
         }
     },
     "procedures": [
         {
             "name": "X-Ray",
-            "date": "2025-05-07",
+            "date": "2025-05-09",
             "practitioner": "Dr. Smith",
             "charge": 250.0
+        },
+        {
+            "name": "MRI",
+            "date": "2025-05-09",
+            "practitioner": "Dr. Lee",
+            "charge": 1500.0
         }
     ],
-    "total_charges": 250.0
+    "total_charges": 1750.0
 }
